@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <title>About Zcables</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container container--sm header-flex">
+            <a href="index.html">
+                <img src="images/logo-1.png" alt="Lumina Creative" class="logo" />
+            </a>
+            <nav>
+                <ul class="main-menu main-menu-container">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="colors.html">COLORS</a></li>
+                    <li><a class="current" href="faq.html">FAQ</a></li>
+                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+
+            </nav>
+            <!-- Mobile menu -->
+
+            <!-- Mobile Menu & Hamburger Icon -->
+            <div class="navbar__mobile-menu">
+                <div class="navbar__mobile-menu-toggle">
+                    <i class="fas fa-bars fa-2x"></i>
+                </div>
+                <!-- Mobile Menu Items -->
+                <div class="navbar__mobile-menu-items">
+                    <ul class="navbar__mobile-menu-list">
+                        <li class="navbar__mobile-menu-item"><a href="index.html">Home</a> </li>
+                        <li class="navbar__mobile-menu-item"> <a href="customize.html">SHOP</a> </li>
+                        <li class="navbar__mobile-menu-item"> <a href="colors.html">Colors</a> </li>
+                        <li class="navbar__mobile-menu-item"> <a class="current" href="faq.html">FAQ</a></li>
+                        <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </navbar>
+        </div>
+    </header>
+
+    <section class="services bg-dark">
+        <div class="container-1">
+            <h1>Frequently Asked Questions</h1>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleDrawer('drawer1')">About Me</button>
+                <div id="drawer1" class="drawer">
+                    <p>Welcome to Zcables — where creativity meets craftsmanship in the art of coiled cables!
+                        <br>
+                        I’m Dor, My journey began with a simple fascination for cables and has evolved into a dedicated
+                        craft,
+                        blending functionality with unique design.
+                        <br>
+                        Every coil I create is a testament to precision,quality, and a touch of personal flair.
+                        <br>
+                        Whether you’re looking to enhance your workspace or add a distinctive touch to your setup, my
+                        coiled cables are designed to stand out.
+                        <br>
+                        Explore my collection and discover the perfect blend of style and practicality for your tech
+                        needs!
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleDrawer('drawer2')">Length Restrictions [CTRL / ALT / SHIFT /
+                    K-Type NOTE]</button>
+                <div id="drawer2" class="drawer">
+                    <p>Due to the high power requirements of these keyboards, the absolute cable length (including coil)
+                        should be kept as short as possible. For 550 cable (26/28AWG) it's recommended to cap the total
+                        cable run at ~270cm. For all other keyboards, keep the total cable run under 390cm.
+                        <br>
+                        <br>
+                        To resolve power issues:
+                        <br>
+                        <li>Check the BIOS to see if your motherboard has options to increase USB port voltage</li>
+                        <li>Use the keyboard/cable with a back panel USB port or a port that plugs directly into the
+                            motherboard</li>
+                        <li>Use the keyboard/cable with a powered USB hub</li>
+                        <li>Ensure that there aren't too many USB devices on a single interface. Too many devices and
+                            they may end up fighting for power</li>
+                        <li>Set "XHCI Pre-Boot Mode" to "Disabled" in the BIOS</li>
+                        <li>Try different ports (USB 2.0 / USB 3.x)</li>
+
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleDrawer('drawer3')">Compatibility</button>
+                <div id="drawer3" class="drawer">
+                    <p> ***Do not mix detachable cables across different vendors***</p>
+                    <li>Cables with detachable connectors (aviator, GX16, YC8, etc) may not be compatible with
+                        detachable cables from other vendors. Using incompatible detachable sides together can cause
+                        damage.</li>
+                    <li>USB C 5-pin connectors are for USB C to USB C cables only. Detachable USB C 5-pin cables are
+                        only compatible with other detachable USB C 5-pin cables.</li>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleDrawer('drawer4')">Cable Diameter</button>
+                <div id="drawer4" class="drawer">
+                    <p>Cable diameter varies depending on whether or not the cable has techflex.
+                        </br>
+                        The diameter can also vary slightly depending on the paracord spool.
+                        </br>
+                        550 cable diameter with techflex is ~5.2mm and w/out techflex is ~4.2mm.
+                        </br>
+
+                        </br>
+                        Jumbo cable diameter (22AWG) is ~7mm.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleDrawer('drawer5')">Should I get techflex?</button>
+                <div id="drawer5" class="drawer">
+                    <p>Techflex adds a second color tone, diameter, coil strength, and overall feel to the cable.
+                        </br>
+
+                        </br>
+
+                        Coils made with thinner cable (e.g. without techflex) use more total cable because of the thin
+                        cable. Coils made with thicker cable (e.g. with techflex) use less cable. Using less total cable
+                        is an advantage from a power delivery perspective since cables lose power over distance
+                        (attenuation).
+
+                        </br>
+
+                        </br>
+
+                        Thicker cables also produce slightly taller coils. For example, a 5.2mm cable (with techflex)
+                        coiled on a large rod will be taller than a 4.2mm cable (without techflex) coiled on the same
+                        rod..</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleDrawer('drawer6')">Refund Policy</button>
+                <div id="drawer6" class="drawer">
+                    <p>
+                        Due to the customized build of each cable there are no returns or refunds for customized orders.
+                        <br>Please be aware of the colour options you have selected, by visiting our color charts or
+                        Instagram page if
+                        you need help picking out the right colours, or contact me directly and I will be happy to help.
+                        <br>
+
+                        <br>
+                        If for some strange reason something occurs during the shipping process and your cable does not
+                        work when you receive it contact me immediately. I will make sure you are taken care of. Quality
+                        cables is my top priority, each cable is fully tested with a multi-meter and then function
+                        tested on a keyboard to ensure there are no problems before it is sent out.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleDrawer('drawer7')">Payment</button>
+                <div id="drawer7" class="drawer">
+                    <p>We currently accept the following payment methods: Bit and PayBox.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleDrawer('drawer8')">Delivery</button>
+                <div id="drawer8" class="drawer">
+                    <p>All orders are shipped via DONE lockers.
+                       <br> Pickup is available by prior arrangement in Tel-AVIV.<br>
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleDrawer('drawer9')">How do I make a Purchase?</button>
+                <div id="drawer9" class="drawer">
+                    <p> Simply select the items and add them to your shopping cart. 
+                        <br>
+                        You can then proceed through the checkout process and we will contact you to finalize the payment.
+                    <p>
+
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./index.js"></script>
+    <script>
+        function toggleDrawer(id) {
+            const allDrawers = document.querySelectorAll('.drawer');
+            allDrawers.forEach(drawer => {
+                if (drawer.id !== id) {
+                    drawer.style.display = 'none';
+                }
+            });
+            const currentDrawer = document.getElementById(id);
+            if (currentDrawer.style.display === 'block') {
+                currentDrawer.style.display = 'none';
+            } else {
+                currentDrawer.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
