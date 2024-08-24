@@ -111,6 +111,112 @@ img {
   font-size: 1.2rem;
 }
 
+.shop-container{
+width: 100%;
+}
+
+.flex-column{
+  display: flex;
+flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+}
+
+.ml-10{
+  display: flex;
+  margin-left: 13dvw;
+/* justify-content: center; */
+/* align-items: center; */
+/* margin-right: 10rem; */
+}
+
+.option-container{
+  border-radius: 4rem;
+  background-color: #227bbf;
+  width: 20rem;
+}
+
+
+
+/* select */
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 24rem;
+
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #C5C6C7;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color:#1D1D1D;  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #C5C6C7;
+
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* selecte */
+
+
+.shop-menu-container{
+  width: 20rem;
+
+}
+
+.shop-gallery-container{
+  width: 20rem;
+}
+
 .navbar__mobile-menu-items {
   transform: translateX(100%);
 }
@@ -176,9 +282,16 @@ img {
 
 /* Container */
 .container {
-  max-width: var(--container-normal);
-  margin: 0 auto;
+  /* max-width: var(--container-normal); */
+  /* display: flex; */
+  /* justify-content: center; */
   padding: 0 1.5rem;
+}
+
+.center-container{
+    max-width: var(--container-normal);
+    margin: 0 auto;
+    padding: 0 1.5rem;
 }
 
 .container-lg {
@@ -195,7 +308,7 @@ img {
 
 /* Input */
 
-input{
+input {
   padding: 2rem;
 }
 
@@ -261,7 +374,7 @@ input{
 }
 
 .gallery {
-  padding-top: 4rem;
+  /* padding-top: 4rem; */
   /* background-color: #333333; */
   /* background-color: #46A29F; */
   background-color: #0B0C11;
@@ -279,6 +392,16 @@ input{
   width: calc(33.333% - 20px);
   border-radius: 10px;
 }
+
+.image-costumize{
+  width: 30dvw;
+}
+
+.form-container{
+  /* width: 30dvw; */
+  width: 100%;
+}
+
 
 .gallery-item img {
   border-radius: 10px;
@@ -431,7 +554,7 @@ input{
     display: block;
   }
 
-  .header .main-menu{
+  .header .main-menu {
     display: none;
 
   }
@@ -480,13 +603,16 @@ input{
 }
 
 
- select{
+select {
   padding: 1rem;
 }
 
+h1 {
+  font-size: 0..5rem;
+}
 
 .container-1 {
-  max-width: 800px;
+  /* max-width: 800px; */
   margin: 20px auto;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -512,10 +638,11 @@ h1 {
   transition: background-color 0.3s;
   background-color: transparent;
   color: #49C5B6;
-font-weight: 700;
-font-family: "Teko", sans-serif;
-font-optical-sizing: auto;
-font-style: normal;}
+  font-weight: 700;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
 .faq-question:hover {
   /* background-color: #d4d4d4; */
@@ -527,7 +654,7 @@ font-style: normal;}
   border: 1px solid #ccc;
   border-top: none;
   margin-top: -1px;
-  background-color: #29292B; 
+  background-color: #29292B;
   border-radius: 0 0 5px 5px;
 }
 
@@ -537,7 +664,7 @@ font-style: normal;}
   color: #C0C0C0;
 }
 
- li {
+li {
   margin: 0;
   font-size: 1rem;
   color: #C0C0C0;
